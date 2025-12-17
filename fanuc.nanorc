@@ -6,8 +6,10 @@
 
 syntax "Gcode" "\.(mpf|CNC|cnc|tap|NC|nc)$"
 
-#Tools
-color yellow "(ROUND|SQRT|AND|BCD|^[[:blank:]]*END[123]|GT|LT|[DHT][-]?[[:digit:]]*\.?[[:digit:]]*)"
+#Tool [T D H]
+color brightmagenta "(ROUND|SQRT|AND|BCD|^[[:blank:]]*END[123]|GT|LT|[DHT][-]?[[:digit:]]*\.?[[:digit:]]*)"
+
+#Speed Feedrate [S F P A]
 color brightgreen "(ACOS|COS|ABS|FUP|EXP|IF|[SPFA][-]?[[:digit:]]*\.?[[:digit:]]*)"
 
 #Line numbers
@@ -17,7 +19,7 @@ color brightblack "^[[:blank:]]*N[[:digit:]]+"
 color cyan "G[[:digit:]]*"
 
 #M-codes
-color brightmagenta "M[[:digit:]]+"
+color yellow "M[[:digit:]]+"
 
 #Z-axis
 color brightblue "Z[-]?[[:digit:]]*\.?[[:digit:]]*"
