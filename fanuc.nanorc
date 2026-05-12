@@ -25,7 +25,7 @@ color yellow "M[[:digit:]]+"
 color brightblue "Z[-]?[[:digit:]]*\.?[[:digit:]]*"
 
 #Macros
-color brightblue "(ROUND|^[[:blank:]]*WHILE|GOTO[[:digit:]]+|THEN|ASIN|ACOS|ATAN|SQRT|XOR|AND|SIN|COS|TAN|ABS|BIN|BCD|FIX|FUP|EXP|^[[:blank:]]*END[123]|DO[123]|OR|LN|IF|EQ|NE|GT|LT|GE|LE)"
+color brightblue "(ROUND|^[[:blank:]]*WHILE|GOTO([[:digit:]]+|)|THEN|ASIN|ACOS|ATAN|SQRT|XOR|AND|SIN|COS|TAN|ABS|BIN|BCD|FIX|FUP|EXP|^[[:blank:]]*END[123]|DO[123]|OR|LN|IF|EQ|NE|GT|LT|GE|LE)"
 color green "#[[:digit:]]*"
 color brightred "(\[|\]|\*|\/|\=)"
 
